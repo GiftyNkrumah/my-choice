@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../images/background.jpg');
+  background-color: #6b6b6b;
+  color: whitesmoke;
+}
+
+.home {
+  text-align: center;
+}
+
+.home p, .home h1 {
+  color: whitesmoke;
+}
+
+.home p {
+  margin: 0;
+  font-size: 50;
+}
+
+.bottom_bar{
+  text-align: center;
+  color: whitesmoke;
+}
