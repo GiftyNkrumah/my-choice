@@ -1,14 +1,18 @@
 import React from 'react'
+import '../styles/navbar.css'
 
 function BottomIcons() {
     return (
         <div className='bottom_bar'>
-            <nav className="nav flex-column p5">
-                <a className="nav-link" href="/create">Create poll</a>
-                <a className="nav-link" href="/reviews">Reviews</a>
-                <a className="nav-link" href="/contact">Contact</a>           
+            <br/>
+            <nav className="nav flex-column">
+                <a href="/create">Create poll</a>
+                <a href="/reviews">Reviews</a>
+                <a href="/contact">Contact</a>           
             </nav>
-            <footer>myChoice ® 2020</footer>    
+            <br/>
+            <footer><b>myChoice ® 2020</b></footer> 
+            <br/>   
         </div>
     )
 }

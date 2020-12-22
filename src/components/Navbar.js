@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../images/logo.png'
 
 function Navbar() {
-    return (
+    return ( 
         <nav className='navbar navbar-expand-lg navbar-light' style={{backgroundColor: 'whitesmoke'}}>
             <div className='container-fluid'>
                 <a className='navbar-brand' href='/'>
@@ -30,12 +30,12 @@ function Navbar() {
                         <div className='nav-link dropdown-toggle' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                             Username
                         </div>
-                        {/* <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
+                        <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
                             <li><a className='dropdown-item' href='#'>Action</a></li>
-                            <li><a className='dropdown-item' href='#'>Another action</a></li>
+                            <li><a className='dropdown-item' href='/update'>Edit profile</a></li>
                             <li><hr className='dropdown-divider'/></li>
-                            <li><a className='dropdown-item' href='#'>Something else here</a></li>
-                        </ul> */}
+                            <li><a className='dropdown-item' href='#'>Log out</a></li>
+                        </ul>
                     </li>
                 </ul>
                 
