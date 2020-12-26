@@ -46,7 +46,7 @@ function Login() {
                         />
                         </div>
                 </div><br/>
-                <button type="submit" className="btn btn-light" data-toggle="modal" data-target="#exampleModal">Log in</button>
+                <button type="submit" className="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Sign in</button>
             </form> <br/>
             <p>Don't have an account? <a href='/signup'>Create one</a> now. It takes seconds.</p> 
 

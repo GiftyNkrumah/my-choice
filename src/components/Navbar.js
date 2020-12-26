@@ -54,7 +54,7 @@ function Navbar() {
                             :
                             <>
                                 <li className='nav-item'>
-                                    <a className='nav-link' href='/login'>Log in</a>
+                                    <a className='nav-link' href='/login'>Sign in</a>
                                 </li>
                                 <li className='nav-item'>
                                     <a className='nav-link' href='/signup'>Create account</a>
@@ -81,8 +81,8 @@ function Navbar() {
                     Are you sure you want to log out?
                 </div>
                 <div className="modal-footer">
-                    <button type="button" className="btn btn-light">Yes</button>
-                    <button type="button" className="btn btn-light" data-dismiss="modal">No</button>
+                    <button type="button" className="btn btn-secondary">Yes</button>
+                    <button type="button" className="btn btn-secondary" data-dismiss="modal">No</button>
                 </div>
             </div>
         </div>

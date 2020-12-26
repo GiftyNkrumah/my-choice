@@ -1,22 +1,26 @@
-import React from 'react'
-import Arrow from '../images/arrow_1.png'
+import React, { useContext } from 'react'
+import { LoginContext } from '../contexts/LoginContext'
 
 function Dashboard() {
+
+    const { isLogged } = useContext(LoginContext)
+
     return (
         <div className='all'>
-            <div style={{textAlign:'center'}}>
-                <div className="row">
-                    <div className="col-md-6 .d-flex dashboard">
-                        <h1>Hey there!</h1>
-                        <p style={{fontSize:30}}>You missed one step...</p><br/><br/>
-                        <p style={{fontSize:30}}>Sign in to see your dashboard</p>
+            {
+                isLogged?
+                    <div>
+                        Work in progress
                     </div>
-                    {/* <div className="col-md-6 center">
-                        <img className='flip' src={Arrow} alt=''/>
-                    </div> */}
-                </div>
-            </div>
-            
+                :
+                    <div style={{textAlign:'center'}}>
+                        <h1>Hey there!</h1>
+                        <p style={{fontSize:30}}>Your dashboard will be displayed here once you sign in.</p><br/><br/>
+                        <a href='/login'>
+                            <button type="button" class="btn btn-secondary">Sign in</button>
+                        </a>
+                    </div>
+            }   
         </div>
     )
 }

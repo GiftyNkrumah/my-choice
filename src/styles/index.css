@@ -5,18 +5,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../images/background.jpg');
   background-color: #828282;
-  color: whitesmoke;
 }
 
 .all{
   margin: 50px;
+  padding: 50px;
+  background-color: whitesmoke;
+  color: #6b6b6b;
+  border-radius: 5px;
+}
+
+.contact{
+  margin: 50px;
+  background-color: whitesmoke;
+  color: #6b6b6b;
+  border-radius: 5px;
+}
+
+.contact_details{
+  background-image: url('../images/telephone.jpg');
+  background-size: cover;
+  color: whitesmoke;
+  padding: 50px;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.contact_form {
+  padding: 50px;
+}
+
+.tele {
+  width: 100%;
+  height: auto;
 }
 
 .home {
-  background-image: url('../images/background.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
   text-align: center;
   width: 100%;
   margin: auto;
@@ -39,18 +65,18 @@ body {
 
 a{
   text-decoration: none;
-  color: whitesmoke;
+  color: #6b6b6b;
 }
 
 a:hover{
-  color: white;
+  color: black;
 }
 
 .login {
-  max-width: 250px;
+  max-width: 300px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   width: 100%;
   text-align: center;
 }
@@ -64,4 +90,8 @@ a:hover{
 .dashboard{
   width: 100%;
   margin: auto;
+}
+
+.nomargin {
+  margin: 0;
 }

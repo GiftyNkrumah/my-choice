@@ -124,7 +124,7 @@ export default function Signup() {
                     />
                 </div>
             </div><br/>
-            <button type="submit" className="btn btn-light" data-toggle="modal" data-target="#exampleModal">Create account</button>
+            <button type="submit" className="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Create account</button>
         </form>      
 
         {/* Modal */}
