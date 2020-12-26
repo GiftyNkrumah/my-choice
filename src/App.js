@@ -1,11 +1,12 @@
+import LoginContextProvider from "./contexts/LoginContext";
 import MyChoice from "./MyChoice";
 
 
 function App() {
   return (
-    <div>
+    <LoginContextProvider>
       <MyChoice/>
-    </div>
+    </LoginContextProvider>
   )
 }
 
