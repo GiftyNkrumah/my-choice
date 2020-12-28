@@ -4,7 +4,7 @@ import { LoginContext } from '../contexts/LoginContext'
 
 export default function Signup() {
 
-    // Declaration of constants
+    // Declaration of variables
     const { setLogged, email, setEmail } = useContext(LoginContext)
     const [firstname, setFirstname] = useState('')
     const [middlename, setMiddlename] = useState('')

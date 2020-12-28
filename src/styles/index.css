@@ -81,12 +81,6 @@ a:hover{
   text-align: center;
 }
 
-.flip {
-  transform: scaleX(-1) rotate(135deg);
-  float: right;
-  /* margin-right: 100px; */
-}
-
 .dashboard{
   width: 100%;
   margin: auto;
