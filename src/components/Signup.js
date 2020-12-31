@@ -19,14 +19,13 @@ export default function Signup() {
 
     // Validation
     function Validation (event) {
-        event.preventDefault()
-
+    
         if (firstname !== '' && lastname !== '' && email !== '' && actype !== 'Choose...' && pass !== '' && conf !== '' && pass === conf) {
+            event.preventDefault()    
             setLogged(true)
-            history.push('/')
+            history.push('/')        
         }
     }
-
 
     return (
         <div className='all'>
@@ -124,22 +123,44 @@ export default function Signup() {
                     />
                 </div>
             </div><br/>
-            <button type="submit" className="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">Create account</button>
+            <button type="submit" className="btn btn-secondary" data-toggle="modal" data-target="#signup">Create account</button>
         </form>      
 
         {/* Modal */}
-        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="signup" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div className="modal-body">
-                        ...
-                    </div>
+                    { 
+                        firstname === '' || lastname === '' || email === '' || actype === 'Choose...' || pass === '' || conf === ''?
+                            <>
+                                <div className="modal-header">
+                                    <h5 className="modal-title" id="exampleModalLabel">Error</h5>
+                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div className="modal-body">
+                                    Please fill all the relevant fields
+                                </div>
+                            </>
+                        :
+                        <>
+                            {
+                                pass !== conf&&
+                                <>
+                                    <div className="modal-header">
+                                        <h5 className="modal-title" id="exampleModalLabel">Error</h5>
+                                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div className="modal-body">
+                                        Password should be equal to confirmation
+                                    </div>
+                                </>
+                            }
+                        </>
+                    }
                 </div>
             </div>
         </div>  

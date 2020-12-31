@@ -17,7 +17,7 @@ function Dashboard() {
                         <h1>Hey there!</h1>
                         <p style={{fontSize:30}}>Your dashboard will be displayed here once you sign in.</p><br/><br/>
                         <a href='/login'>
-                            <button type="button" class="btn btn-secondary">Sign in</button>
+                            <button type="button" className="btn btn-secondary">Sign in</button>
                         </a>
                     </div>
             }   

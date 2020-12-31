@@ -27,14 +27,15 @@ function Navbar() {
                     <span className='navbar-toggler-icon'></span>
                 </button>
                 <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-                <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-                    <li className='nav-item'>
-                        <a className='nav-link' href='/dashboard'>Dashboard</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a className='nav-link' href='/tutorial'>Tutorial</a>
-                    </li>
-                </ul>
+                    <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+                        <li className='nav-item'>
+                            <a className='nav-link' href='/dashboard'>Dashboard</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a className='nav-link' href='/tutorial'>Tutorial</a>
+                        </li>
+                    </ul>
+                </div>
                 <span className="navbar-text">
                     <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                         { isLogged?
@@ -47,7 +48,7 @@ function Navbar() {
                                         <li><a className='dropdown-item' href=''>Action</a></li>
                                         <li><a className='dropdown-item' href='/update'>Edit profile</a></li>
                                         <li><hr className='dropdown-divider'/></li>
-                                        <li><a className='dropdown-item' onClick={Logout} data-toggle="modal" data-target="#exampleModal">Log out</a></li>
+                                        <li><a className='dropdown-item' onClick={Logout} data-toggle="modal" data-target="#logout">Log out</a></li>
                                     </ul>
                                 </li>
                             </> 
@@ -63,12 +64,11 @@ function Navbar() {
                         }
                     </ul>
                 </span>
-                </div>
             </div>
         </nav>
 
         {/* Modal */}
-        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="logout" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog" role="document">
             <div className="modal-content">
                 <div className="modal-header">
