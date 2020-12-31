@@ -33,7 +33,7 @@ function Login() {
                             onChange={(e) => setEmail(e.target.value)}
                             required
                         />
-                        </div>
+                    </div>
                 </div><br/>
                 <div className="row">
                     <div className="col">
@@ -44,7 +44,7 @@ function Login() {
                             onChange={(e) => setPassword(e.target.value)}
                             required
                         />
-                        </div>
+                    </div>
                 </div><br/>
                 <button type="submit" className="btn btn-secondary" data-toggle="modal" data-target="#login">Sign in</button>
             </form> <br/>

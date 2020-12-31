@@ -32,48 +32,48 @@ export default function Signup() {
         <h3>Create a new account</h3>
         <br/>
         <form onSubmit={Validation}>
-            <div className="row">
-                <div className="col">
+            <div className='row'>
+                <div className='col'>
                     <label>First name</label>
                     <input 
-                        type="text" 
-                        className="form-control" 
+                        type='text' 
+                        className='form-control' 
                         onChange={(e) => setFirstname(e.target.value)} 
                         required
                     />
                     </div>
-                <div className="col">
+                <div className='col'>
                     <label>Middle name</label>
                     <input 
-                        type="text" 
-                        className="form-control" 
+                        type='text' 
+                        className='form-control' 
                         onChange={(e) => setMiddlename(e.target.value)}
                     />
                 </div>
-                <div className="col">
+                <div className='col'>
                     <label>Last name</label>
                     <input 
-                        type="text" 
-                        className="form-control" 
+                        type='text' 
+                        className='form-control' 
                         onChange={(e) => setLastname(e.target.value)}
                         required
                     />
                 </div>
             </div><br/>
-            <div className="row">
-                <div className="col col-md-9">
+            <div className='row'>
+                <div className='col col-md-9'>
                     <label>Name of institution (Optional)</label>
                     <input 
-                        type="text" 
-                        className="form-control" 
+                        type='text' 
+                        className='form-control' 
                         onChange={(e) => setInst(e.target.value)}
                     />
                 </div>
-                <div className="col col-md-3">
+                <div className='col col-md-3'>
                     <label>Type of account</label>
                     <select 
-                        id="inputState" 
-                        className="form-control" 
+                        id='inputState' 
+                        className='form-control' 
                         onChange={(e) => setActype(e.target.value)}
                         required
                     >
@@ -85,61 +85,61 @@ export default function Signup() {
                     </select>
                 </div>
             </div><br/>
-            <div className="row">
-                <div className="col">
+            <div className='row'>
+                <div className='col'>
                     <label>Email address</label>
                     <input 
-                        type="email" 
-                        className="form-control" 
+                        type='email' 
+                        className='form-control' 
                         onChange={(e) => setEmail(e.target.value)}
                         required
                     />
                     </div>
-                <div className="col">
-                    <label>Website(optional)</label>
+                <div className='col'>
+                    <label>Website (Optional)</label>
                     <input 
-                        type="text" 
-                        className="form-control" 
+                        type='text' 
+                        className='form-control' 
                         onChange={(e) => setWeb(e.target.value)}
                     />
                 </div>
             </div><br/>
-            <div className="row">
-                <div className="col">
+            <div className='row'>
+                <div className='col'>
                     <label>Password</label>
                     <input 
-                        type="password" 
-                        className="form-control" 
+                        type='password' 
+                        className='form-control' 
                         onChange={(e) => setPass(e.target.value)}
                         required
                     />
                     </div>
-                <div className="col">
+                <div className='col'>
                     <label>Confirm password</label>
                     <input 
-                        type="password" 
-                        className="form-control" 
+                        type='password' 
+                        className='form-control' 
                         onChange={(e) => setConf(e.target.value)}
                     />
                 </div>
             </div><br/>
-            <button type="submit" className="btn btn-secondary" data-toggle="modal" data-target="#signup">Create account</button>
+            <button type='submit' className='btn btn-secondary' data-toggle='modal' data-target='#signup'>Create account</button>
         </form>      
 
         {/* Modal */}
-        <div className="modal fade" id="signup" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog" role="document">
-                <div className="modal-content">
+        <div className='modal fade' id='signup' tabIndex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+            <div className='modal-dialog' role='document'>
+                <div className='modal-content'>
                     { 
                         firstname === '' || lastname === '' || email === '' || actype === 'Choose...' || pass === '' || conf === ''?
                             <>
-                                <div className="modal-header">
-                                    <h5 className="modal-title" id="exampleModalLabel">Error</h5>
-                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                <div className='modal-header'>
+                                    <h5 className='modal-title' id='exampleModalLabel'>Error</h5>
+                                    <button type='button' className='close' data-dismiss='modal' aria-label='Close'>
+                                    <span aria-hidden='true'>&times;</span>
                                     </button>
                                 </div>
-                                <div className="modal-body">
+                                <div className='modal-body'>
                                     Please fill all the relevant fields
                                 </div>
                             </>
@@ -148,13 +148,13 @@ export default function Signup() {
                             {
                                 pass !== conf&&
                                 <>
-                                    <div className="modal-header">
-                                        <h5 className="modal-title" id="exampleModalLabel">Error</h5>
-                                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                    <div className='modal-header'>
+                                        <h5 className='modal-title' id='exampleModalLabel'>Error</h5>
+                                        <button type='button' className='close' data-dismiss='modal' aria-label='Close'>
+                                            <span aria-hidden='true'>&times;</span>
                                         </button>
                                     </div>
-                                    <div className="modal-body">
+                                    <div className='modal-body'>
                                         Password should be equal to confirmation
                                     </div>
                                 </>

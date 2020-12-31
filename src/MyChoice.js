@@ -11,6 +11,7 @@ import Tutorial from './components/Tutorial'
 import Login from './components/Login'
 import Signup from './components/Signup'
 import Update from './components/Update'
+import ChangePassword from './components/ChangePassword'
 
 function MyChoice() {
     return (
@@ -22,6 +23,7 @@ function MyChoice() {
                 <Route path='/login' component={Login}/>
                 <Route path='/signup' component={Signup}/>
                 <Route path='/update' component={Update}/>
+                <Route path='/changepassword' component={ChangePassword}/>
                 <Switch>
                     <Route exact path='/' component={Home}/>
                 </Switch>
