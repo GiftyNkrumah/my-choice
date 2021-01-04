@@ -13,7 +13,7 @@ function Home() {
             <p style={{fontSize:30}}>Start your journey here <img className='arrow' src={Arrow} alt=''/></p> 
             </div>
             <div style={{clear: 'both'}}>
-                <button type="button" className="btn btn-light">Create a new poll</button>
+                <button type="button" className="btn btn-light"><a href='/create'>Create a new poll</a></button>
             </div>
             <br/>
         </div>

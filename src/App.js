@@ -1,11 +1,14 @@
-import LoginContextProvider from "./contexts/LoginContext";
-import MyChoice from "./MyChoice";
+import LoginContextProvider from './contexts/LoginContext';
+import PollContextProvider from './contexts/PollContext'
+import MyChoice from './MyChoice';
 
 
 function App() {
   return (
     <LoginContextProvider>
-      <MyChoice/>
+      <PollContextProvider>
+        <MyChoice/>
+      </PollContextProvider>
     </LoginContextProvider>
   )
 }

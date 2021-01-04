@@ -15,9 +15,9 @@ import ChangePassword from './components/ChangePassword'
 
 function MyChoice() {
     return (
-        <div>
-            <Navbar/>
+        <div>        
             <Router>
+                <Navbar/>
                 <Route path='/dashboard' component={Dashboard}/>
                 <Route path='/tutorial' component={Tutorial}/>
                 <Route path='/login' component={Login}/>

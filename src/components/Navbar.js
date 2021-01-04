@@ -8,11 +8,11 @@ function Navbar() {
     const { email, isLogged, setLogged } = useContext(LoginContext)
     let history = useHistory()
 
-    function Logout(event) {
+    function Logout (event) {
         event.preventDefault()
         setLogged(false)
         
-        history.push('/')
+        history.push('/');
     }
 
     return ( 
@@ -47,7 +47,7 @@ function Navbar() {
                                             <li><a className='dropdown-item' href='/update'>Update profile</a></li>
                                             <li><a className='dropdown-item' href='/changepassword'>Change password</a></li>
                                             <li><hr className='dropdown-divider'/></li>
-                                            <li><div className='dropdown-item' onClick={Logout} data-toggle='modal' data-target='#logout'>Log out</div></li>
+                                            <li><div className='dropdown-item' data-toggle='modal' data-target='#logout'>Log out</div></li>
                                         </ul>
                                     </li>
                                 </> 
@@ -81,7 +81,7 @@ function Navbar() {
                     Are you sure you want to log out?
                 </div>
                 <div className='modal-footer'>
-                    <button type='button' className='btn btn-secondary' onClick={Logout}>Yes</button>
+                    <button type='button' className='btn btn-secondary' data-dismiss='modal' onClick={Logout}>Yes</button>
                     <button type='button' className='btn btn-secondary' data-dismiss='modal'>No</button>
                 </div>
             </div>

@@ -23,7 +23,7 @@ function Contact() {
                         <div className='left_text'>
                             <h4>Address</h4>
                             <p className='nomargin'>
-                                1880  Randolph Street
+                                1880 Randolph Street
                             </p>
                             <p className='nomargin'>
                                 Cambridge, MA
@@ -75,7 +75,7 @@ function Contact() {
                             <div className='form-group'>
                                 <label>Message</label>
                                 <textarea 
-                                    type='email' 
+                                    type='text' 
                                     className='form-control' 
                                     rows='5' 
                                     onChange={(e) => setMessage(e.target.value)}

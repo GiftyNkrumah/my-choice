@@ -93,3 +93,19 @@ a:hover{
 .nomargin {
   margin: 0;
 }
+
+.reviews{
+  background-image: url('../images/reviews.png');
+  background-size: cover;
+  color: whitesmoke;
+  padding: 50px;
+  /* padding-top: 150px;
+  text-align: center; */
+  /* -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: black; */
+}
+
+.fix {
+  height: 500px;
+  overflow-y: auto;
+}
