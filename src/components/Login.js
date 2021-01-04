@@ -12,11 +12,17 @@ function Login() {
 
     // Validation
     function Validation(event) {
-        if (email === password) {
-            event.preventDefault()
+        event.preventDefault()
+
+        if (email === '' || password === '') {
+            alert('Fill all the relevant fields') 
+        } else if ( email !== password) {
+            alert('Incorrect email or password')
+        } else {
             setLogged(true)
-            history.push('/')
+            history.push('/') 
         }
+        
     }
 
     return (
@@ -46,12 +52,12 @@ function Login() {
                         />
                     </div>
                 </div><br/>
-                <button type="submit" className="btn btn-secondary" data-toggle="modal" data-target="#login">Sign in</button>
+                <button type="submit" className="btn btn-secondary" /*data-toggle="modal" data-target="#login"*/>Sign in</button>
             </form> <br/>
             <p>Don't have an account? <a href='/signup'>Create one</a> now. It takes seconds.</p> 
 
             {/* Modal */}
-            <div className="modal fade" id="login" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            {/* <div className="modal fade" id="login" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                     {
@@ -70,7 +76,7 @@ function Login() {
                         :
                         <>
                             {
-                                email !== password&&
+                                email !== password?
                                 <>
                                     <div className="modal-header">
                                         <h5 className="modal-title" id="exampleModalLabel">Error</h5>
@@ -82,12 +88,24 @@ function Login() {
                                         Wrong email or password
                                     </div>
                                 </>
+                                :
+                                <>
+                                    <div className="modal-header">
+                                        <h5 className="modal-title" id="exampleModalLabel">Successful</h5>
+                                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div className="modal-body">
+                                        You are logged in!
+                                    </div>
+                                </>
                             }
                         </>
                     }
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

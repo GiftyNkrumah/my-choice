@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import LoginContext from '../contexts/LoginContext'
 
 function Reviews() {
+
     // Declare variables
     // const { email } = useContext(LoginContext)
     const [review, setReview] = useState('')

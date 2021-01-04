@@ -141,7 +141,7 @@ export default function Update() {
                                 Are you sure you want to update your details?
                             </div>
                             <div className='modal-footer'>
-                                <button type='button' className='btn btn-secondary' onClick={Edit}>Yes</button>
+                                <button type='button' className='btn btn-secondary' data-dismiss='modal' onClick={Edit}>Yes</button>
                                 <button type='button' className='btn btn-secondary' data-dismiss='modal'>No</button>
                             </div>
                         </>

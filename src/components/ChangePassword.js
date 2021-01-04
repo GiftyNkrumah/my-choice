@@ -16,8 +16,7 @@ export default function ChangePassword() {
             // database stuff
             alert('done')
             history.push('/')
-        }
-        
+        } 
     }
 
     return (
@@ -92,7 +91,7 @@ export default function ChangePassword() {
                                             Are you sure you want to change your password?
                                         </div>
                                         <div className='modal-footer'>
-                                            <button type='button' className='btn btn-secondary' onClick={Change}>Yes</button>
+                                            <button type='button' className='btn btn-secondary' data-dismiss='modal' onClick={Change}>Yes</button>
                                             <button type='button' className='btn btn-secondary' data-dismiss='modal'>No</button>
                                         </div>
                                     </>

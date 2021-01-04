@@ -30,8 +30,8 @@ function MyChoice() {
                 <Route path='/create' component={Create}/>
                 <Route path='/reviews' component={Reviews}/>
                 <Route path='/contact' component={Contact}/>
+                <BottomIcons/>
             </Router>
-            <BottomIcons/>
         </div>
     )
 }

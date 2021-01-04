@@ -19,11 +19,16 @@ export default function Signup() {
 
     // Validation
     function Validation (event) {
-    
-        if (firstname !== '' && lastname !== '' && email !== '' && actype !== 'Choose...' && pass !== '' && conf !== '' && pass === conf) {
-            event.preventDefault()    
-            setLogged(true)
-            history.push('/')        
+        if (firstname !== '' && lastname !== '' && email !== '' && actype !== 'Choose...' && pass !== '' && conf !== '') { 
+            if (pass === conf) {
+                event.preventDefault()
+                setLogged(true)
+                history.push('/')        
+            }   else {
+                alert('Password must be equal to confirmation')
+            }
+        } else {
+            alert('Please fill out all relevant fields')
         }
     }
 
@@ -123,11 +128,11 @@ export default function Signup() {
                     />
                 </div>
             </div><br/>
-            <button type='submit' className='btn btn-secondary' data-toggle='modal' data-target='#signup'>Create account</button>
+            <button type='submit' className='btn btn-secondary' /*data-toggle='modal' data-target='#signup'*/>Create account</button>
         </form>      
 
         {/* Modal */}
-        <div className='modal fade' id='signup' tabIndex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+        {/* <div className='modal fade' id='signup' tabIndex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
             <div className='modal-dialog' role='document'>
                 <div className='modal-content'>
                     { 
@@ -163,7 +168,7 @@ export default function Signup() {
                     }
                 </div>
             </div>
-        </div>  
+        </div>   */}
     </div>
     ) 
 }
